@@ -1,3 +1,4 @@
+var username = 'mmelchorm';
 function login(){
    let nombre = document.getElementById("nombre");
    if (nombre.value != '') {
@@ -6,7 +7,7 @@ function login(){
 		http.append("request", "login");
 		http.append("nombre", nombre.value);
 		var request = new XMLHttpRequest();
-		request.open("POST", "controller/ajax_calcular.php");
+		request.open("POST", "https//api.github/users/"+username+"/numerosPrimos/tree/gh-pages/controller/ajax_calcular.php");
 		request.send(http);
 		request.onreadystatechange = function () {
 			//sconsole.log( request.responseText);
