@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
+  <title>Numeros Primos</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -13,10 +13,10 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,6 +27,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.10.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
@@ -66,47 +72,45 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="calculadora" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Calculadora N&uacute;meros Primos</h2>
-          <p>Calcula los números primos que sean menor o igual a él. Luego suma dichos primos y muestra el resultado.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-         
-          <div class="col-lg-7 mt-5 mt-lg-0  align-items-stretch">
-            <form action="" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="name">Ingresa un N&uacute;mero</label>
-                  <input type="text" name="numero" class="form-control" id="numero" required>
-                </div>
-                <div class="form-group col-md-1">
-                  <label for=""></label>
-                  <button class="btn btn-info" onclick="">Calcular</button>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Numeros Primos:</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-            </form>
-          </div>
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Calculadora N&uacute;meros Primos</h2>
+                <p>Calcula los números primos que sean menor o igual a él. Luego suma dichos primos y muestra el resultado.</p>
             </div>
-          </div>
-
-          
-
-        </div>
-
+            <div class="row" data-aos="fade-in">
+                <div class="col-lg-7 mt-5 mt-lg-0  align-items-stretch">
+                    <form action="" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="">Ingresa un N&uacute;mero</label>
+                            <input type="text" name="numero" class="form-control" id="numero" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="">Sumatoria</label>
+                            <input type="text" name="resultado" class="form-control" id="resultado" required>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn btn-info" onclick="calcular();">Calcular</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numeros Primos:</label>
+                        <textarea class="form-control" name="primos" id="primos" rows="10" required></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                    <div class="form-group">
+                        <label for="name">Intentos del Usuario</label>
+                        <!-- <textarea class="form-control" name="intentos" id="intentos" rows="10" required></textarea> -->
+                        <div id = "contenedor_listado" class="list-group">
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
       </div>
     </section><!-- End Contact Section -->
 
@@ -153,8 +157,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script> -->
- <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
