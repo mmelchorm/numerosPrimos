@@ -78,7 +78,7 @@ function genera_intento(numero,sumatoria,primos){
 		http.append("sumatoria", sumatoria);
 		http.append("primos", primos);
 		var request = new XMLHttpRequest();
-		request.open("POST", "controller/ajax_calcular.php");
+		request.open("POST", "https://pruebasnumprimos.000webhostapp.com/controller/ajax_calcular.php");
 		request.send(http);
 		request.onreadystatechange = function () {
 			//sconsole.log( request.responseText);
@@ -108,7 +108,7 @@ function get_intentos(){
 		http.append("request", "get_intentos");
 		http.append("usuario", usuario.value);
 		var request = new XMLHttpRequest();
-		request.open("POST", "controller/ajax_calcular.php");
+		request.open("POST", "https://pruebasnumprimos.000webhostapp.com/controller/ajax_calcular.php");
 		request.send(http);
 		request.onreadystatechange = function () {
 			//sconsole.log( request.responseText);
@@ -139,7 +139,7 @@ function get_intento_usuario(intento){
 		http.append("usuario", usuario.value);
 		http.append("intento", intento);
 		var request = new XMLHttpRequest();
-		request.open("POST", "controller/ajax_calcular.php");
+		request.open("POST", "https://pruebasnumprimos.000webhostapp.com/controller/ajax_calcular.php");
 		request.send(http);
 		request.onreadystatechange = function () {
 			//sconsole.log( request.responseText);
